@@ -11,3 +11,6 @@ This is a plugin for the 'Sublime Text' text editor (version 2 & 3) that provide
 
 #Usage
 The usage is pretty simple, just start typing and a list should appear where you can choose your predefined code - you can switch with 'TAB' between the different arguments.
+
+#Supported commands
+check them here: https://github.com/bolqqq/sublime-cloudrop/blob/master/supportedAutocomplete.lua
