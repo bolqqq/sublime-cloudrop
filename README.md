@@ -8,3 +8,6 @@ This is a plugin for the 'Sublime Text' text editor (version 2 & 3) that provide
 4. Click on 'Preferences' and 'Browse Packages'
 5. Move the complete Lua folder into the Packages folder
 6. Restart Sublime and set Syntax to .lua or open a .lua file
+
+#Usage
+The usage is pretty simple, just start typing and a list should appear where you can choose your predefined code - you can switch with 'TAB' between the different arguments.
