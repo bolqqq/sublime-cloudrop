@@ -1,6 +1,5 @@
 {
 	"scope": "source.lua - variable.other.lua",
-
 	"completions":
 	[
 		"lua",
