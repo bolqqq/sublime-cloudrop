@@ -378,4 +378,416 @@ NameOfMenu:Section(string ID, string Name)
 NameOfMenu:Separator()
 NameOfMenu:Slider(string ID, string Name, int DefaultValue, int MinValue, int MaxValue, int Step, int Step, bool ForceDefault)
 NameOfMenu:TargetSelector(string ID, string Name, int Mode, int Range, string DmgType, bool FocusSelected, bool FocusSelected)
+-- Graphics
+Graphics.DrawArrow(Vector3 arg1, Vector3 arg2, float arg3, float arg4, float long arg5, unsinged long arg5)
+Graphics.DrawCircle(float arg1, float arg2, float arg3, float arg4, color arg5)
+Graphics.DrawRectangleOutline(Vector2 arg1, long arg2, long arg3, unsinged long arg4, unsingned long arg5)
+Graphics.PrintFloatText(Unit arg1, unsingned int arg2, string arg3)
+Graphics.WorldToScreen(Unit/Vector3 arg1)
+-- Network - EnetPacket
+Network.EnetPacket.Block()
+Network.EnetPacket.Decode1()
+Network.EnetPacket.Decode2()
+Network.EnetPacket.Decode4()
+Network.EnetPacket.DecodeF()
+Network.EnetPacket.DecodeStr()
+Network.EnetPacket.Encode1(unsigned char arg2)
+Network.EnetPacket.Encode2(unsigned short arg2)
+Network.EnetPacket.Encode4(unsigned long arg2)
+Network.EnetPacket.EncodeF(float arg2)
+Network.EnetPacket.EncodeStr(string arg2)
+Network.EnetPacket.GetRemaining()
+Network.EnetPacket.Hide()
+Network.EnetPacket.Recv()
+Network.EnetPacket.Replace1(unsigned char arg2, int arg2)
+Network.EnetPacket.Replace2(unsigned short arg2, int arg2)
+Network.EnetPacket.Replace4(unsigned long arg2, int arg2)
+Network.EnetPacket.ReplaceF(float arg2, int arg2)
+Network.EnetPacket.Send()
+Network.EnetPacket.SetPos(int arg2)
+Network.EnetPacket.Skip(int arg2)
+-- Game
+Game.ExePath()
+Game.GetEnemyBarData()
+Game.GetFriendlyBarData()
+Game.GetRegion()
+Game.GetSelfBarData()
+Game.HeroCount()
+Game.Heroes()
+Game.HookRads()
+Game.Hover()
+Game.Latency()
+Game.MyHero()
+Game.ObjectCount()
+Game.Objects()
+Game.Path()
+Game.ServerTimer()
+Game.Timer()
+Game.AllowCameraInput(bool arg2)
+Game.AllowKeyInput(bool arg2)
+Game.EnableAntiAFK(bool arg2)
+Game.SetChatStatus(bool arg2)
+Game.Hero(int arg2)
+Game.Object(int arg2)
+Game.ObjectByNetworkId(int arg2)
+Game.SellItem(int arg2)
+Game.IsGrass(Vector3 arg2)
+Game.ShowGreenClick(Vector3 arg2)
+Game.ShowRedClick(Vector3 arg2)
+Game.BuyItem(unsinged int arg2)
+Game.GetLoadPlayer(unsinged int arg2)
+Game.LevelSpell(unsinged int arg2)
+Game.GetSkillHash(string arg2)
+Game.GetUnitHPBarOffset(Unit arg2)
+Game.GetUnitHPBarPos(Unit arg2)
+Game.Target(Unit arg2)
+Game.SetMaxZoom(float arg2)
+Game.CalculatePath(Unit arg1, Vector3 arg2)
+Game.CalculatePath(unsingned int arg1, float arg2, float arg3, float arg4, int arg5)
+-- Game AIMeshNGrid
+Game.AIMeshNGrid.CalculateHeuristic(NavigationCell arg1, NavigationCell arg2)
+Game.AIMeshNGrid.GetCell(unsigned int arg1, unsigned int arg2)
+Game.AIMeshNGrid.GetHeightMapAt(unsigned int arg1, unsigned int arg2)
+Game.AIMeshNGrid.GetHeuristicMapAt(unsigned int arg1)
+-- Game ArchiveEntry
+Game.ArchiveEntry.Extract(string arg1)
+-- Game - CBuff
+"endT",
+"name",
+"startT",
+"type",
+"valid",
+-- Game - CSpell
+"animationTime",
+"endPos",
+"level",
+"name",
+"projectileID",
+"startPos",
+"target",
+"windUpTime",
+-- Game - CTemplate5
+"chatBubbleOffset",
+"fadeSpeed",
+"healthOffset",
+"levelTextOffset",
+"locOffset",
+"parOffset",
+"percentageOffset",
+"screenSpaceOffset",
+"titleTextOffset",
+-- Game - Chat
+Game.Chat.Block()
+Game.Chat.Print(string arg1)
+Game.Chat.Send(string arg1)
+-- Game - IniBin
+Game.IniBin.Get(object arg1, object arg2)
+Game.IniBin.MergeWith(IniBin arg1)
+-- Game - Item
+"id",
+"name",
+"stacks",
+-- Game - Item
+"id",
+"points",
+-- Game NavigationHeuristicMap
+Game.NavigationHeuristicMap.GetHeuristicAt(unsinged int arg1)
+-- Game - NavigationPath
+Game.NavigationPath.GetHeuristicAt(unsinged int Path)
+"curPath",
+"endPath",
+"startPath",
+-- Game - PARType
+"BLOOD",
+"ENERGY",
+"MANA",
+"UNLIMITED",
+-- Game - Slots
+"ITEM_1",
+"ITEM_2",
+"ITEM_3",
+"ITEM_4",
+"ITEM_5",
+"ITEM_6",
+"ITEM_7",
+"RECALL",
+"SPELL_1",
+"SPELL_2",
+"SPELL_3",
+"SPELL_4",
+"SUMMONER_1",
+"SUMMONER_2",
+-- Game - SpellData
+"bAlwaysSnapFacing",
+"bAmmoCountHiddenInUI",
+"bAmmoNotAffectedByCDR",
+"bApplyAttackDamage",
+"bApplyAttackEffect",
+"bApplyMaterialOnHitSound",
+"bBelongsToAvatar",
+"bCanCastWhileDisabled",
+"bCanMoveWhileChanneling",
+"bCanOnlyCastWhileDead",
+"bCanOnlyCastWhileDisabled",
+"bCannotBeSuppressed",
+"bCantCancelWhileChanneling",
+"bCantCancelWhileWindingUp",
+"bCantCastWhileRooted",
+"bCastRangeUseBoundingBoxes",
+"bCursorChangesInGrass",
+"bDisableCastBar",
+"bDoNotNeedToFaceTarget",
+"bDoesntBreakChannels",
+"bDrawSecondaryLineIndicator",
+"bHaveAfterEffect",
+"bHaveHitBone",
+"bHaveHitEffect",
+"bHavePointEffect",
+"bIgnoreAnimContinueUntilCastFrame",
+"bIgnoreRangeCheck",
+"bIsDisabledWhileDead",
+"bIsToggleSpell",
+"bLineMissileBounces",
+"bLineMissileEndsAtTargetPoint",
+"bLineMissileFollowsTerrainHeight",
+"bLineMissileTrackUnits",
+"bLineMissileUsesAccelerationForBounce",
+"bLockConeToPlayer",
+"bMinimapIconRotation",
+"bNoWinddownIfCancelled",
+"bOrientRadiusTextureFromPlayer",
+"bOrientRangeIndicatorToCursor",
+"bOrientRangeIndicatorToFacing",
+"bPreventChargingSecondCast",
+"bSpellRevealsChampion",
+"bSubjectToGlobalCooldown",
+"bTriggersGlobalCooldown",
+"bUseAnimatorFramerate",
+"bUseAutoattackCastTime",
+"bUseChargeChanneling",
+"bUseChargeTargeting",
+"bUseGlobalLineIndicator",
+"bUseMinimapTargeting",
+"castFrame",
+"castRadius",
+"castRadiusSecondary",
+"castRangeDisplayOverride",
+"castTargetAdditionalUnitsRadius",
+"castType",
+"cd",
+"channelDuration",
+"circleMissileAngularVelocity",
+"circleMissileRadialVelocity",
+"currentCd",
+"delayCastOffsetPercent",
+"delayTotalTimePercent",
+"flags",
+"flags0",
+"flags1",
+"flags2",
+"flags3",
+"flags4",
+"flags5",
+"flags6",
+"isMissileUnblockable",
+"isToggleSpell",
+"level",
+"lineDragLength",
+"lineWidth",
+"mana",
+"maxAmmo",
+"missileAccel",
+"missileFixedTravelTime",
+"missileGravity",
+"missileLifeTime",
+"missileMaxSpeed",
+"missileMinSpeed",
+"missileMinTravelTime",
+"missilePerceptionBubbleRadius",
+"missilePerceptionBubbleRevealsStealth",
+"missileSpeed",
+"name",
+"overrideCastTime",
+"range",
+"sealed",
+"toggleState",
+"totalCooldown",
+-- Game - SpellState
+"COOLDOWN",
+"NOT_LEARNED",
+"NO_MANA",
+"READY",
+"SUPRESSED",
+"UNKNOWN_STATE",
+-- Game - Team
+"BLUE",
+"NEUTRAL",
+"NONE",
+"RED",
+-- Callback
+"COUNT_DOWN"
+"CRITICAL"
+"DEBUG"
+"DISABLE"
+"DODGE"
+"ENEMY_CRITICAL_DAMAGE"
+"ENEMY_MAGIC_DAMAGE"
+"ENEMY_PHYSICAL_DAMAGE"
+"ENEMY_TRUE_DAMAGE"
+"EXPERIENCE"
+"GOLD"
+"HEAL"
+"INVULNERABLE"
+"LEGACY"
+"LEGACY_CRITICAL"
+"LEVEL"
+"MAGIC_DAMAGE"
+"MANA_DAMAGE"
+"MANA_HEAL"
+"PHYSICAL_DAMAGE"
+"QUEST_COMPLETE"
+"QUEST_RECEIVED"
+"SCORE"
+"SPECIAL"
+"TRUE_DAMAGE"
+-- FloatTextMode
+"COUNT_DOWN"
+"CRITICAL"
+"DEBUG"
+"DISABLE"
+"DODGE"
+"ENEMY_CRITICAL_DAMAGE"
+"ENEMY_MAGIC_DAMAGE"
+"ENEMY_PHYSICAL_DAMAGE"
+"ENEMY_TRUE_DAMAGE"
+"EXPERIENCE"
+"GOLD"
+"HEAL"
+"INVULNERABLE"
+"LEGACY"
+"LEGACY_CRITICAL"
+"LEVEL"
+"MAGIC_DAMAGE"
+"MANA_DAMAGE"
+"MANA_HEAL"
+"PHYSICAL_DAMAGE"
+"QUEST_COMPLETE"
+"QUEST_RECEIVED"
+"SCORE"
+"SPECIAL"
+"TRUE_DAMAGE"
 
+-- Unit
+:Attack(float arg2, float arg3)
+:AttackMove(float arg2, float arg3)
+:CalcDamage(Unit arg2, float arg3)
+:CalcMagicDamage(Unit arg2, float arg3)
+:CanUseSpell(unsinged int arg2, float arg3, float arg4)
+:DistanceTo(Unit arg2)
+:GetBuff(unsingned int arg2)
+:GetInventorySlot(unsingned int arg2)
+:GetItem(unsingned int arg2)
+:GetSpellData(unsingned int arg2)
+:HasBuff(unsingned int arg2)
+:Hold()
+:IsUnit(unit arg2)
+:Move(unsinged int arg2, float arg3)
+:Stop()
+
+  "addDamage",
+  "animation",
+  "ap",
+  "armor",
+  "armorMaterial",
+  "armorPen",
+  "armorPenPercent",
+  "attackSpeed",
+  "boundingRadius",
+  "buffCount",
+  "canAttack",
+  "canCast",
+  "canMove",
+  "cdr",
+  "Name",
+  "collisionHeight",
+  "collisionRadius",
+  "critChance",
+  "critDmg",
+  "damage",
+  "dead",
+  "deathTimer",
+  "drawPos",
+  "expBonus",
+  "glyphs",
+  "gold",
+  "hasMovePath",
+  "health",
+  "hpPool",
+  "hpRegen",
+  "iParType",
+  "isAI",
+  "isAsleep",
+  "isAttackReady",
+  "isCasting",
+  "isFeared",
+  "isFleeing",
+  "isForceRenderParticles",
+  "isGhosted",
+  "isInvulnerable",
+  "isLifeStealImune",
+  "isMagicImune",
+  "isMe",
+  "isMelee",
+  "isMoving",
+  "isNearSight",
+  "isNoRender",
+  "isPhysImune",
+  "isRanged",
+  "isRevealSpecific" ,
+  "isStealthed",
+  "isTargetable",
+  "isTargetableToTeam",
+  "isTaunted",
+  "level",
+  "lifeSteal",
+  "magicArmor",
+  "magicPen",
+  "magicPenPercent",
+  "magicReduction",
+  "mana",
+  "marks",
+  "masteries",
+  "maxBBox",
+  "maxHealth",
+  "maxMana",
+  "minBBox",
+  "minionScore",
+  "mpRegen",
+  "ms",
+  "name",
+  "networkID",
+  "parType",
+  "path",
+  "pathCollisionRadius",
+  "physReduction",
+  "pos",
+  "quints",
+  "range",
+  "rotation",
+  "seals",
+  "spellEnd",
+  "spellName",
+  "spellOwner",
+  "spellStart",
+  "spellVamp",
+  "team",
+  "totalDamage",
+  "type",
+  "valid",
+  "visible",
+  "visionPos",
+  "visionRadius",
+  "weaponMaterial",
+  "x",
+  "y",
+  "z",
