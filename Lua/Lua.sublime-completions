@@ -1,5 +1,6 @@
 {
 	"scope": "source.lua - variable.other.lua",
+
 	"completions":
 	[
 		"lua",
@@ -371,6 +372,21 @@
 		{ "trigger": "Window.GetWindowPos", "contents": "Window.GetWindowPos()" },
 // Window - Clipboard
 		{ "trigger": "Window.Clipboard.GetText", "contents": "Window.Clipboard.GetText()" },
-		{ "trigger": "Window.Clipboard.SetText", "contents": "Window.Clipboard.SetText(${1:string arg2})" }
+		{ "trigger": "Window.Clipboard.SetText", "contents": "Window.Clipboard.SetText(${1:string arg2})" },
+// MenuConfig
+		{ "trigger": "MenuConfig", "contents": "${1:NameOfMenu} = MenuConfig(${2:string ID}, ${2:string Name})" },
+		{ "trigger": "MenuConfig:Boolean", "contents": "${1:NameOfMenu}:Boolean(${2:string ID}, ${3:string Name}, ${4:bool defaultValue}, ${5:function callback}, ${6:bool ForceDefault})" },
+		{ "trigger": "MenuConfig:Button", "contents": "${1:NameOfMenu}:Button(${2:string ID}, ${3:string Name}, ${4:function callback})" },
+		{ "trigger": "MenuConfig:ColorPick", "contents": "${1:NameOfMenu}:ColorPick(${2:string ID}, ${3:string Name}, ${4:string defaultValue}, ${5:function callback}, ${6:bool ForceDefault})" },
+		{ "trigger": "MenuConfig:DropDown", "contents": "${1:NameOfMenu}:DropDown(${2:string ID}, ${3:string Name}, ${4:int defaultValue}, ${5:table DropTable}, ${6:function callback}, ${7:bool ForceDefault})" },
+		{ "trigger": "MenuConfig:Info", "contents": "${1:NameOfMenu}:Info(${2:string ID}, ${3:string Name})" },
+		{ "trigger": "MenuConfig:KeyBinding", "contents": "${1:NameOfMenu}:KeyBinding(${2:string ID}, ${3:string Name}, ${4:string Key}, ${5:function callback}, ${6:bool ForceDefault})" },
+		{ "trigger": "MenuConfig:Menu", "contents": "${1:NameOfMenu}:Menu(${2:string ID}, ${3:string Name})" },
+		{ "trigger": "MenuConfig:Number", "contents": "${1:NameOfMenu}:Number(${2:string ID}, ${3:string Name}, ${4:int DefaultValue}, ${5:int MinValue}, ${6:int MaxValue}, ${7:function callback}, ${8:bool ForceDefault})" },
+		{ "trigger": "MenuConfig:Section", "contents": "${1:NameOfMenu}:Section(${2:string ID}, ${3:string Name})" },
+		{ "trigger": "MenuConfig:Separator", "contents": "${1:NameOfMenu}:Separator()" },
+		{ "trigger": "MenuConfig:Slider", "contents": "${1:NameOfMenu}:Slider(${2:string ID}, ${3:string Name}, ${4:int DefaultValue}, ${5:int MinValue}, ${6:int MaxValue}, ${8:int Step}, ${8:function callback}, ${9:bool ForceDefault})" },
+		{ "trigger": "MenuConfig:TargetSelector", "contents": "${1:NameOfMenu}:TargetSelector(${2:string ID}, ${3:string Name}, ${4:int Mode}, ${5:int Range}, ${6:string DmgType}, ${8:bool FocusSelected}, ${8:bool OwnTeam})" },
+
 	]
 }
